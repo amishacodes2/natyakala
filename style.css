@@ -614,3 +614,31 @@ nav {
   background: #fff; /* or your theme color */
   z-index: 1000;
 }
+/* MOBILE BACKGROUND FIXES */
+@media (max-width: 768px) {
+
+  /* Make background scale properly */
+  body, .hero {
+    background-size: contain !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* Remove sticky/fixed backgrounds on phones for better scaling */
+  body, .hero {
+    background-attachment: scroll !important;
+  }
+}
+ @media (max-width: 768px) {
+
+  .side-logo {
+    position: static;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .side-logo img {
+    height: 60px;
+    width: auto;
+  }
+}
